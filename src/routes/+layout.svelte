@@ -53,7 +53,6 @@ let routesStates = $derived(
     routes.map(route => ({
         ...route,
         active: $page.url.pathname == route.href,
-        
     }))
 )
 
@@ -112,10 +111,10 @@ function setTheme(event: Event) {
                             </div>
                         </label>
                     </div>
-                    <ul class="dropdown-content rounded-box shadow bg-base-200 p-2">
-                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Default" value={null} bind:group={theme}/></li>
-                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Light" value="juleslight" bind:group={theme}/></li>
-                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Dark" value="julesdark" bind:group={theme}/></li>
+                    <ul class="dropdown-content rounded-box shadow-sm bg-base-200 p-2">
+                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" class:btn-active={theme===null} aria-label="Default" value={null} bind:group={theme}/></li>
+                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" class:btn-active={theme==="juleslight"} aria-label="Light" value="juleslight" bind:group={theme}/></li>
+                        <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" class:btn-active={theme==="julesdark"} aria-label="Dark" value="julesdark" bind:group={theme}/></li>
                     </ul>
                 </div>
             </div>
@@ -131,8 +130,7 @@ function setTheme(event: Event) {
                 <li>
                     <a  href={routeWithState.href} 
                         class={routeWithState.cssClass ?? ''}
-
-                        class:active={routeWithState.active}>
+                        class:menu-active={routeWithState.active}>
                       {routeWithState.title}
                       {#if routeWithState.external} 
                         <span class="icon-[ic--baseline-open-in-new]"></span>

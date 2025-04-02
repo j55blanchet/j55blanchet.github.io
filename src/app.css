@@ -1,3 +1,96 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin 'daisyui';
+@plugin '@tailwindcss/typography';
+
+/* @config '../tailwind.config.cjs'; */
+
+
+
+@plugin "daisyui/theme" {
+    name: "juleslight";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+
+  --color-base-100: #FEFAE9; /* Base surface color of page */
+  --color-base-200: #E0DDD0; /* Base color, darker shade */
+  --color-base-300: #C0BEB7; /* Base color, even darker shade */
+  --color-base-content: #474332; /* Foreground content color */
+  --color-primary: #44D6AB; /* Primary brand color */
+  --color-primary-content: #EAE9E4; /* Foreground content color for primary */
+  --color-secondary: #014746; /* Secondary brand color */
+  --color-secondary-content: #EAE9E4; /* Foreground content color for secondary */
+  --color-accent: #9574B8; /* Accent brand color */
+  --color-accent-content: #EAE9E4; /* Foreground content color for accent */
+  --color-neutral: #7C7C7C; /* Neutral dark color */
+  --color-neutral-content: #EAE9E4; /* Foreground content color for neutral */
+  --color-info: #708CEF; /* Info color */
+  --color-info-content: #EAE9E4; /* Foreground content color for info */
+  --color-success: #1FC764; /* Success color */
+  --color-success-content: #EAE9E4; /* Foreground content color for success */
+  --color-warning: #EAC318; /* Warning color */
+  --color-warning-content: #474332; /* Foreground content color for warning */
+  --color-error: #E07878; /* Error color */
+  --color-error-content: #EAE9E4; /* Foreground content color for error */
+
+  /* border radius */
+  --radius-selector: 1rem; /* Border radius of selectors */
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+
+@plugin "daisyui/theme" {
+    name: "julesdark";
+    default: false;
+    prefersdark: true;
+    color-scheme: "dark";
+
+    --color-base-100: #33322E; /* Base surface color of page */
+    --color-base-200: #262520; /* Base color, darker shade */
+    --color-base-300: #1D1C1B; /* Base color, even darker shade */
+    --color-base-content: #DBD8CA; /* Foreground content color */
+    --color-primary: #44D6AB; /* Primary brand color */
+    --color-primary-content: #EAE9E4; /* Foreground content color for primary */
+    --color-secondary: #014746; /* Secondary brand color */
+    --color-secondary-content: #EAE9E4; /* Foreground content color for secondary */
+    --color-accent: #9574B8; /* Accent brand color */
+    --color-accent-content: #EAE9E4; /* Foreground content color for accent */
+    --color-neutral: #7C7C7C; /* Neutral dark color */
+    --color-neutral-content: #EAE9E4; /* Foreground content color for neutral */
+    --color-info: #708CEF; /* Info color */
+    --color-info-content: #EAE9E4; /* Foreground content color for info */
+    --color-success: #1FC764; /* Success color */
+    --color-success-content: #EAE9E4; /* Foreground content color for success */
+    --color-warning: #EAC318; /* Warning color */
+    --color-warning-content: #474332; /* Foreground content color for warning */
+    --color-error: #E07878; /* Error color */
+    --color-error-content: #EAE9E4; /* Foreground content color for error */
+
+    /* Border radius */
+    --radius-selector: 1rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+
+    /* Base sizes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* Border size */
+    --border: 1px;
+
+    /* Effects */
+    --depth: 1;
+    --noise: 0;
+}
