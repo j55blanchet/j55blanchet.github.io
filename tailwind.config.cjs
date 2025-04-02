@@ -13,11 +13,11 @@ module.exports = {
         }
     },
     daisyui: {
-        theme: 'julienlight',
-        darkTheme: 'juliendark',
+        theme: 'juleslight',
+        darkTheme: 'julesdark',
         themes: [
             {
-                julienlight:  {
+                juleslight:  {
                     "color-scheme": "light",
                     "primary": "#44D6AB",
                     "secondary": "#014746",
@@ -46,7 +46,7 @@ module.exports = {
                     // "--tab-border": "1px", // border width of tabs
                     // "--tab-radius": "0.5rem", // border radius of tabs
                   },
-                  juliendark: {
+                  julesdark: {
                     "color-scheme": "dark",
                     "primary": "#44D6AB",
                     "secondary": "#014746",

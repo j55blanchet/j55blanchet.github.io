@@ -14,7 +14,7 @@
 <article class="max-w-prose p-4 mx-auto prose prose-headings:font-slabserif">
 
     <h1 class="mb-2">
-        Hi! I'm Julien
+        Hi! I'm Jules
         <aside class="badge badge-neutral">He/They</aside>
     </h1>
 
